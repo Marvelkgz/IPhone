@@ -20,6 +20,7 @@ public class IphoneSteps extends BaseTest {
 
     @Given("find page store")
     public void find_page_store() {
+        helper.javascriptScrollDownThePage();
         Assertions.assertEquals("https://www.istore.kg", helper.getText(findPage.Assertions));
         driver.close();
 

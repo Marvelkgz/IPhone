@@ -52,7 +52,7 @@ public class Helper {
 
     public Helper javascriptScrollDownThePage(){
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
-        js.executeScript("window.scrollBy(0,1300)");
+        js.executeScript("window.scrollBy(0,650)");
         return this;
     }
 

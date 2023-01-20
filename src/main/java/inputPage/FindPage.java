@@ -10,7 +10,7 @@ public  class FindPage extends BasePage {
     public WebElement search;
     @FindBy(className = "gNO89b")
     public WebElement inputButton;
-    @FindBy(xpath = "(//div[@class='TbwUpd NJjxre'])[3]")
+    @FindBy(xpath = "(//cite[@class='iUh30 tjvcx'])[1]")
     public WebElement Assertions;
 
     public FindPage openPage(String str){
