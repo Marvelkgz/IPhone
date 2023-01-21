@@ -1,9 +1,11 @@
 C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\driver\EdgeWebDriver.java
+C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\asserts\AssertClass.java
 C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\driver\FireFoxWebDriver.java
 C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\mvnKomanda\MvnKomanda.java
 C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\dataProvider\ConfigReader.java
 C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\driver\ChromeWebDriver.java
+C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\page_objects\HomePage.java
 C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\driver\Driver.java
+C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\page_objects\ResultPage.java
 C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\BasePage\BasePage.java
-C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\inputPage\FindPage.java
 C:\Users\marve\obtaincareUI.New\IPhone\src\main\java\helperMethods\Helper.java

@@ -1,4 +1,6 @@
 package stepDefs;
+
+import BasePage.BasePage;
 import driver.Driver;
 import helperMethods.Helper;
 
@@ -16,6 +18,6 @@ public abstract class BaseTest {
     protected HomePage homePage = new HomePage();
     protected ResultPage resultPage = new ResultPage();
     protected WebDriver driver = Driver.getDriver();
-
-
+    protected Hooks hooks = new Hooks();
+    protected BasePage basePage = new BasePage();
 }

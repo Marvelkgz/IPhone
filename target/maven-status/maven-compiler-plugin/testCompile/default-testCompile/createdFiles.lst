@@ -1,3 +1,4 @@
-stepDefs\BaseTest.class
 stepDefs\IphoneSteps.class
 runner\RunnerSmoke.class
+stepDefs\Hooks.class
+stepDefs\BaseTest.class

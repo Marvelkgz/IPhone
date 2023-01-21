@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Assertions;
 
 
 public class IphoneSteps extends BaseTest {
+
     @Given("Go to login page")
     public void go_to_login_page() {
         Driver.getDriver().get(ConfigReader.getProperty("url"));
@@ -23,14 +24,8 @@ public class IphoneSteps extends BaseTest {
     public void find_page_store() throws InterruptedException {
         Thread.sleep(1000);
         Assertions.assertTrue(
-                resultPage.getListOfSitesAsString().stream().anyMatch(s -> s.contains("https://softech.kg"))
-        );
+                resultPage.getListOfSitesAsString().stream().anyMatch(s -> s.contains("https://softech.kg")));
     }
 
-    @After
-    public void closeDriver(){
-        driver.close();
-        driver.quit();
-    }
 
 }
