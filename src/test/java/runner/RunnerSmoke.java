@@ -9,10 +9,17 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features",
         glue = "stepDefs",
-        tags =  "@Smoke",
+        tags = "@Smoke",
+        dryRun = false,
         monochrome = true,
-        dryRun = false
+        publish = true,
+        plugin = {
+                "pretty",
+                "html:target/default-cucumber-reports",
+                "json:target/cucumber.json"
+        }
 )
+
 public class RunnerSmoke {
 
 }
