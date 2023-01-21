@@ -1,14 +1,21 @@
 package stepDefs;
 import driver.Driver;
 import helperMethods.Helper;
-import inputPage.FindPage;
+
+import io.cucumber.java.After;
+import org.junit.AfterClass;
+import org.junit.jupiter.api.AfterAll;
+import page_objects.HomePage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import page_objects.ResultPage;
 
 public abstract class BaseTest {
 
 
     protected Helper helper = new Helper();
-    protected FindPage findPage = new FindPage();
+    protected HomePage homePage = new HomePage();
+    protected ResultPage resultPage = new ResultPage();
     protected WebDriver driver = Driver.getDriver();
+
+
 }

@@ -1,25 +1,27 @@
-package inputPage;
+package page_objects;
 
 import BasePage.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public  class FindPage extends BasePage {
+public  class HomePage extends BasePage {
 
     @FindBy(name = "q")
     public WebElement search;
     @FindBy(className = "gNO89b")
     public WebElement inputButton;
-    @FindBy(xpath = "(//cite[@class='iUh30 tjvcx'])[1]")
-    public WebElement Assertions;
 
-    public FindPage openPage(String str){
+    private HomePage inputText(String str){
         helper.sendKeys(search,str);
         return this;
     }
-    public FindPage Click(){
+    private HomePage clickSearchButton(){
         helper.click(inputButton);
         return this;
+    }
+    public void search (String str){
+        inputText(str)
+                .clickSearchButton();
     }
 
 }

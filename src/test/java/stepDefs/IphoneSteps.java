@@ -2,7 +2,9 @@ package stepDefs;
 
 import dataProvider.ConfigReader;
 import driver.Driver;
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
+import org.junit.AfterClass;
 import org.junit.jupiter.api.Assertions;
 
 
@@ -14,16 +16,21 @@ public class IphoneSteps extends BaseTest {
 
     @Given("write {string} enter")
     public void write_enter(String str) {
-        findPage.openPage("IPhone");
-        findPage.Click();
+        homePage.search("IPhone");
     }
 
     @Given("find page store")
-    public void find_page_store() {
-        helper.javascriptScrollDownThePage();
-        Assertions.assertEquals("https://www.istore.kg", helper.getText(findPage.Assertions));
-        driver.close();
-
-
+    public void find_page_store() throws InterruptedException {
+        Thread.sleep(1000);
+        Assertions.assertTrue(
+                resultPage.getListOfSitesAsString().stream().anyMatch(s -> s.contains("https://softech.kg"))
+        );
     }
+
+    @After
+    public void closeDriver(){
+        driver.close();
+        driver.quit();
+    }
+
 }
